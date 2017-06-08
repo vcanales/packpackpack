@@ -1,11 +1,11 @@
 {
   "name": "packpackpack",
   "version": "0.0.1",
-  "description": "",
+  "description": "Production build demo",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --open --hot --config ./config/webpack.test.config.js",
-    "build": "NODE_ENV=production webpack --progress --hide-modules --config ./config/webpack.config.js",
+    "build": "NODE_ENV=production webpack --progress -p --hide-modules --config ./config/webpack.config.js",
     "build:dev": "NODE_ENV=development webpack --progress --hide-modules --config ./config/webpack.config.js",
     "lint": "eslint ."
   },
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "chart.js": "^2.6.0",
+    "vue": "^2.3.4",
     "vue-chartjs": "^2.6.4"
   }
 }
