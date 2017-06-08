@@ -1,11 +1,42 @@
 {
   "name": "packpackpack",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development webpack-dev-server --open --hot --config ./config/webpack.test.config.js",
+    "build": "NODE_ENV=production webpack --progress --hide-modules --config ./config/webpack.config.js",
+    "lint": "eslint ."
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Vicente Canales <vicente@pageload.io>",
+  "license": "Apache 2",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-eslint": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-object-assign": "latest",
+    "babel-polyfill": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-latest": "latest",
+    "babel-preset-stage-2": "latest",
+    "babel-register": "latest",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "path": "^0.12.7",
+    "sass-loader": "^6.0.5",
+    "vue-loader": "^12.2.1",
+    "vue-svg-loader": "^0.1.2",
+    "vue-template-compiler": "^2.3.4",
+    "webpack": "latest",
+    "webpack-dev-middleware": "latest",
+    "webpack-dev-server": "latest",
+    "webpack-hot-middleware": "latest",
+    "webpack-merge": "latest"
+  },
+  "dependencies": {
+    "chart.js": "^2.6.0",
+    "vue-chartjs": "^2.6.4"
+  }
 }
