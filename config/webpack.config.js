@@ -51,8 +51,6 @@ module.exports = {
         test: /\.svg$/,
         loader: 'vue-svg-loader',
       },
-
-
     ],
   },
   resolve: {
@@ -87,7 +85,6 @@ if (process.env.NODE_ENV === 'production') {
         warnings: false,
       },
     }),
-
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
