@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --open --hot --config ./config/webpack.test.config.js",
     "build": "NODE_ENV=production webpack --progress --hide-modules --config ./config/webpack.config.js",
+    "build:dev": "NODE_ENV=development webpack --progress --hide-modules --config ./config/webpack.config.js",
     "lint": "eslint ."
   },
   "author": "Vicente Canales <vicente@pageload.io>",
-  "license": "Apache 2",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "latest",
     "babel-eslint": "latest",
