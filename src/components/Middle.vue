@@ -6,7 +6,7 @@
 
 <script>
 import VueCharts from 'vue-chartjs'
-import { Bar, Line } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
 
 const chart = Bar.extend({
   mounted () {
