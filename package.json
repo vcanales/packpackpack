@@ -39,7 +39,6 @@
   "dependencies": {
     "chart.js": "^2.6.0",
     "vue": "^2.3.4",
-    "vue-chartjs": "^2.6.4",
-    "vue-template-compiler": "^2.3.4"
+    "vue-chartjs": "^2.6.4"
   }
 }

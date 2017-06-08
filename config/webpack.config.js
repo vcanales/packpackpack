@@ -32,13 +32,11 @@ module.exports = {
           },
         },
       },
-
       {
         exclude: /node_modules/,
         test: /\.js$/,
         loader: 'babel-loader',
       },
-
       {
         test: /\.(jpg|png|gif)$/,
         loader: 'file-loader',
@@ -88,6 +86,5 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
-
   ]);
 }
