@@ -1,0 +1,17 @@
+.eslintcache
+.npm
+*.log
+node_modules/
+dist/
+test/unit/coverage/
+test/e2e/reports/
+
+# test artifacts
+linter.xml
+karma.xml
+
+# macOS
+.DS_Store
+
+# ide
+.idea
