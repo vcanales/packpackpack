@@ -32,16 +32,18 @@ module.exports = {
           },
         },
       },
+
       {
         exclude: /node_modules/,
         test: /\.js$/,
         loader: 'babel-loader',
       },
+
       {
         test: /\.(jpg|png|gif)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]',
+          name: '[name]-[hash].[ext]',
         },
       },
       {
@@ -49,6 +51,8 @@ module.exports = {
         test: /\.svg$/,
         loader: 'vue-svg-loader',
       },
+
+
     ],
   },
   resolve: {
@@ -83,8 +87,10 @@ if (process.env.NODE_ENV === 'production') {
         warnings: false,
       },
     }),
+
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
+
   ]);
 }
